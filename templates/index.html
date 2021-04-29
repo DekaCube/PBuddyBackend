@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Package Buddy</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="./floating-labels.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div class="text-center mb-4">
+        <h3> Package Details </h3>
+		<p>  Last Update : {{content.last_updated}} </p>
+		<p>  Max G Forces : {{content.max_gs}} </p>
+		<p>  Lattitude : {{content.lat}} </p>
+		<p>  Longitude : {{content.lon}} </p>
+		<p>  Current Temp : {{content.current_temp}} &#8457; </p>
+		<p>  Max Temp : {{content.max_temp}} &#8457; </p>
+		<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+		src="https://www.google.com/maps/embed/v1/place?q={{content.lat}},{{content.lon}}&center={{content.lat}},{{content.lon}}&key=AIzaSyCucVr6rPt1v1wr1P3ICd2mAesrXUCbJMs"></iframe>
+
+ >
+ </iframe>
+		
+	</div>
+ 
+  </body>
+</html>
